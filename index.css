@@ -1,0 +1,77 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Space Grotesk", sans-serif;
+}
+:root {
+  --purple: #3f3eed;
+  --accent: #c8c8fa;
+}
+
+body {
+  display: grid;
+  width: 100vw;
+  max-width: 100vw;
+  display: grid;
+  grid-template-columns: [main-start] 120px [content-start] 1fr [content-end] 120px [main-end];
+  background-color: white;
+  align-items: center;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.navbar {
+  max-height: 5%;
+  color: black;
+  grid-column-start: content-start;
+  grid-column-end: content-end;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  padding: 3rem 0rem;
+}
+.nav-links {
+  display: flex;
+  gap: 1rem;
+}
+.logo-text {
+  font-size: 2rem;
+  font-weight: 700;
+}
+main {
+  grid-column-start: main-start;
+  grid-column-end: main-end;
+  background-color: #f3f3fe;
+  height: 70vh;
+}
+button {
+  background-color: var(--purple);
+  color: white;
+  padding: 0.5rem 2rem;
+  border-radius: 0.2rem;
+}
+.sec-btn {
+  background-color: white;
+  color: #000;
+}
+footer {
+  height: 10%;
+}
+caption {
+  font-weight: bold;
+  color: #4f4f4f;
+}
+.why,
+.features,
+.feadback-header,
+.testimonials {
+  grid-column-start: content-start;
+  grid-column-end: content-end;
+}
+.feedback {
+  grid-column-start: main-start;
+  grid-column-end: main-end;
+  background-color: #f0f5f9;
+  display: grid;
+  grid-template-columns: [main-start] 120px [content-start] 1fr [content-end] 120px [main-end];
+}
