@@ -7,6 +7,7 @@
 :root {
   --purple: #3f3eed;
   --accent: #c8c8fa;
+  --animation-period: 350;
 }
 
 body {
@@ -67,6 +68,27 @@ caption {
 .testimonials {
   grid-column-start: content-start;
   grid-column-end: content-end;
+}
+.card {
+  opacity: 0;
+  cursor: pointer;
+  transition: all 1s;
+  scale: 0.8;
+  animation: fadeInCards 1s linear;
+  animation-timeline: view();
+  animation-range: 5vh 75vh;
+  animation-fill-mode: forwards;
+  animation-delay: calc(var(--animation-delay) * 100ms);
+}
+.card:hover {
+  transform: translateY(-10px);
+}
+
+@keyframes fadeInCards {
+  to {
+    opacity: 1;
+    scale: 1;
+  }
 }
 .feedback {
   grid-column-start: main-start;
