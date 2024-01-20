@@ -75,3 +75,8 @@ caption {
   display: grid;
   grid-template-columns: [main-start] 120px [content-start] 1fr [content-end] 120px [main-end];
 }
+footer {
+  grid-column: main-start / main-end;
+  background-color: var(--purple);
+  height: 40px;
+}

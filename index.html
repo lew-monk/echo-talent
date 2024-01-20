@@ -12,6 +12,13 @@
       rel="stylesheet"
     />
     <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
 
   <body>
@@ -22,7 +29,7 @@
       </div>
       <div class="nav-links">
         <a href="#home">Home</a>
-        <a href="#home">Products</a>
+        <a href="#features">Products</a>
         <a href="#home">Blog</a>
       </div>
       <div class="flex gap-4">
@@ -86,7 +93,7 @@
         insights.
       </p>
     </section>
-    <section class="features relative pb-8">
+    <section id="features" class="features relative pb-8">
       <h1 class="font-bold text-5xl text-center pb-8">Key Features</h1>
       <img
         src="/public/radial.png"
@@ -117,14 +124,14 @@
           class="bg-white h-[348px] w-[360px] flex flex-col items-start justify-center shadow-[0px_1px_100px_rgba(72,72,72,0.1)] rounded-2xl gap-8 px-8"
         >
           <img
-            src="/public/import.png"
+            src="/public/career-path.png"
             alt=""
             class="w-[72px] object-contain"
             srcset=""
           />
 
           <div class="grid gap-4">
-            <h3 class="text-lg font-bold">Import Profile</h3>
+            <h3 class="text-lg font-bold">Career Path</h3>
             <p class="">
               View visual representations of data, empowering real-time
               monitoring, analysis, and informed decision-making.
@@ -135,14 +142,14 @@
           class="bg-white h-[348px] w-[360px] flex flex-col items-start justify-center shadow-[0px_1px_100px_rgba(72,72,72,0.1)] rounded-2xl gap-8 px-8"
         >
           <img
-            src="/public/import.png"
+            src="/public/craft.png"
             alt=""
             class="w-[72px] object-contain"
             srcset=""
           />
 
           <div class="grid gap-4">
-            <h3 class="text-lg font-bold">Import Profile</h3>
+            <h3 class="text-lg font-bold">Craft Cover Letter / CV</h3>
             <p class="">
               View visual representations of data, empowering real-time
               monitoring, analysis, and informed decision-making.
@@ -153,14 +160,14 @@
           class="bg-white h-[348px] w-[360px] flex flex-col items-start justify-center shadow-[0px_1px_100px_rgba(72,72,72,0.1)] rounded-2xl gap-8 px-8"
         >
           <img
-            src="/public/import.png"
+            src="/public/scheduled-posts.png"
             alt=""
             class="w-[72px] object-contain"
             srcset=""
           />
 
           <div class="grid gap-4">
-            <h3 class="text-lg font-bold">Import Profile</h3>
+            <h3 class="text-lg font-bold">Scheduled Posts</h3>
             <p class="">
               View visual representations of data, empowering real-time
               monitoring, analysis, and informed decision-making.
@@ -171,14 +178,14 @@
           class="bg-white h-[348px] w-[360px] flex flex-col items-start justify-center shadow-[0px_1px_100px_rgba(72,72,72,0.1)] rounded-2xl gap-8 px-8"
         >
           <img
-            src="/public/import.png"
+            src="/public/manage.png"
             alt=""
             class="w-[72px] object-contain"
             srcset=""
           />
 
           <div class="grid gap-4">
-            <h3 class="text-lg font-bold">Import Profile</h3>
+            <h3 class="text-lg font-bold">Manage Engagement</h3>
             <p class="">
               View visual representations of data, empowering real-time
               monitoring, analysis, and informed decision-making.
@@ -189,14 +196,14 @@
           class="bg-white h-[348px] w-[360px] flex flex-col items-start justify-center shadow-[0px_1px_100px_rgba(72,72,72,0.1)] rounded-2xl gap-8 px-8"
         >
           <img
-            src="/public/import.png"
+            src="/public/self-care.png"
             alt=""
             class="w-[72px] object-contain"
             srcset=""
           />
 
           <div class="grid gap-4">
-            <h3 class="text-lg font-bold">Import Profile</h3>
+            <h3 class="text-lg font-bold">Self Care</h3>
             <p class="">
               View visual representations of data, empowering real-time
               monitoring, analysis, and informed decision-making.
@@ -205,7 +212,7 @@
         </div>
       </div>
     </section>
-    <section class="feedback py-12 gap-12">
+    <section class="feedback py-12 gap-12 bg-[#F0F5F9]">
       <div
         class="feadback-header w-full text-center flex flex-col gap-4 items-center"
       >
@@ -222,18 +229,92 @@
       </div>
     </section>
     <section class="feedback bg-[#F3F3FE] py-12 gap-12">
-      <div class="feadback-header w-full text-center grid gr">
-        <h1 class="font-bold text-5xl">What are our users saying ?</h1>
-        <p class="w-3/4">
-          Meet the trailblazers who've journeyed with EchoTalent. Their stories
-          of transformed cover letters, engaging LinkedIn posts, and soon,
-          resumes, are testaments to our AI's personal touch in professional
-          journeys.
-        </p>
-      </div>
-      <div class="testimonials">
-        <img src="/public/testimony.png" alt="" srcset="" />
+      <div class="feadback-header">
+        <div class="grid grid-cols-4">
+          <div class="flex flex-col gap-2">
+            <div class="flex items-center gap-2">
+              <img src="./public/Vector.svg" alt="Echo Logo" />
+              <p class="logo-text">Echo Talent</p>
+            </div>
+            <p class="">
+              View visual representations of data, empowering real-time
+              monitoring, analysis
+            </p>
+          </div>
+          <div
+            class="text-[#3F3EED] font-bold grid grid-cols-2 col-span-2 justify-self-center"
+          >
+            <div class="grid gap-4 justify-self-center">
+              <p>Cover Letter Writer</p>
+              <p>AI Career Navigator</p>
+              <p>Resume Writer</p>
+              <p>Job recomender</p>
+              <p>LinkedIn post enhancer</p>
+            </div>
+            <div class="justify-self-center">
+              <p>Pricing</p>
+              <p>Email Us</p>
+            </div>
+          </div>
+          <div class="justify-self-end">
+            <p>Follow us on</p>
+            <div class="flex gap-4 mt-2">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#3f3eed"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-facebook"
+              >
+                <path
+                  d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"
+                />
+              </svg>
+
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#3f3eed"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-instagram"
+              >
+                <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#3f3eed"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-twitter"
+              >
+                <path
+                  d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
+    <footer class="flex justify-center items-center text-white">
+      Copyrights EchoTalent 2023 | All rights reserved
+    </footer>
   </body>
 </html>
