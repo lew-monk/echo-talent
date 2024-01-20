@@ -20,6 +20,9 @@ body {
   align-items: center;
   overflow-y: scroll;
   overflow-x: hidden;
+  /* opacity: 0; */
+  animation: fadeInBody 350ms linear;
+  animation-fill-mode: forwards;
 }
 .navbar {
   max-height: 5%;
@@ -29,6 +32,7 @@ body {
   height: 3rem;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   padding: 3rem 0rem;
 }
 .nav-links {
@@ -50,6 +54,33 @@ button {
   color: white;
   padding: 0.5rem 2rem;
   border-radius: 0.2rem;
+  transition: all 0.3s linear;
+  position: relative;
+  will-change: transform;
+  overflow: hidden;
+}
+button::after {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #c8c8fa;
+  border-radius: 0.2rem;
+  transform: translate(-100%, 0) rotate(90deg);
+  transform-origin: top left;
+  transition: transform 0.2s linear;
+  will-change: transform;
+  z-index: -1;
+}
+button:hover {
+  scale: 1.05;
+  color: var(--purple);
+}
+button:hover::after {
+  transform: translate(0, 0);
 }
 .sec-btn {
   background-color: white;
@@ -88,6 +119,14 @@ caption {
   to {
     opacity: 1;
     scale: 1;
+  }
+}
+@keyframes fadeInBody {
+  from {
+    transform: translateY(-10px);
+  }
+  to {
+    transform: translateY(0px);
   }
 }
 .feedback {
